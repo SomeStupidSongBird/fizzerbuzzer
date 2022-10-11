@@ -14,9 +14,9 @@ def process(number):
        - n is evenly divisible by 5 (returns 'Buzz')
        - n is evenly divisible by both 3 and 5 (returns 'FizzBuzz')"""
     out_string = ""
-    if number%3==0:
+    if not number%3:
         out_string+="Fizz"
-    if number%5==0:
+    if not number%5:
         out_string+="Buzz"
     if out_string=="":
         out_string = str(number)
